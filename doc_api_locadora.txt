@@ -1,0 +1,71 @@
+----- ENDPOINTS ------
+
+** ADICIONAR CLIENTE **
+
+URL: https://localhost:44367/api/clientes
+VERBO HTTP: POST
+CONTENT TYPE: application/json
+
+Exemplo de JSON: 
+{
+    "nome": "Caio Oliveira",
+    "rg": "375846232"
+}
+
+** LISTA TODOS OS CLIENTES CADASTRADOS **
+
+URL: https://localhost:44367/api/clientes
+VERBO HTTP: GET
+
+---------------------------------------------------------------------------
+
+** ADICIONAR FILME **
+
+URL: https://localhost:44367/api/filmes
+VERBO HTTP: POST
+CONTENT TYPE: application/json
+
+Exemplo de JSON: 
+{
+    "nome": "Velozes e Furiosos 9",
+    "sinopse": "Dominic Toretto e Letty vivem uma vida pacata ao lado do filho. Mas eles logo são. ",
+    "genero": "Ação"
+}
+
+** LISTA TODOS OS FILMES CADASTRADOS **
+
+URL: https://localhost:44367/api/filmes
+VERBO HTTP: GET
+
+-------------------------------------------------------------------------------
+
+
+** LISTA TODAS AS LOCACOES CADASTRADOS **
+
+URL: https://localhost:44367/api/locacao
+VERBO HTTP: GET
+
+** LOCAR FILME **
+
+URL: https://localhost:44367/api/locacao/locar
+VERBO HTTP: POST
+CONTENT TYPE: application/json
+
+{
+    "ClienteId": "048e02cc-dfc5-4a10-6b91-08d9632b4a80",
+    "FilmeId": "ae7d664a-17a9-4ce1-8762-08d96374f627",
+    "QuantidadeDiasLocacao": 5
+}
+
+** DEVOLVER FILME **
+
+URL: https://localhost:44367/api/locacao/devolver
+VERBO HTTP: POST
+CONTENT TYPE: application/json
+
+{
+    "clienteId": "048e02cc-dfc5-4a10-6b91-08d9632b4a80",
+    "filmeId": "ec506896-98be-49a2-8761-08d96374f627"
+} 
+
+
